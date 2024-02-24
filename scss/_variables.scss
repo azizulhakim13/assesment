@@ -1,0 +1,16 @@
+
+// Links
+$primary: #2928E8;
+$link-decoration: none;
+$prefix: bs-;
+$transition-base-lg: all .2s ease-in-out;
+$offcanvas-horizontal-width: 350px;
+$btn-font-family: "DM Sans", sans-serif;
+$input-btn-font-family: "DM Sans", sans-serif;
+$btn-padding-y: 12px;
+$btn-padding-x: 32px;
+$btn-font-weight: 500;
+$headings-color: #140B43;
+$body-color: #514A74;
+$spacer: 1rem;
+$spacers: ( 0: 0, 1: $spacer * .25, 2: $spacer * .5, 3: $spacer, 4: $spacer * 1.5, 5: $spacer * 3,12: $spacer * 0.75,20: $spacer * 1.25, 24: $spacer * 1.5, 40: $spacer * 2.5,60: $spacer * 3.75, 80: $spacer * 5,100: $spacer * 6.25,120: $spacer * 7.5, 180: $spacer * 11.25, 144: $spacer * 9, 250: $spacer * 15.625);

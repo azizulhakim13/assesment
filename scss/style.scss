@@ -1,0 +1,70 @@
+@import "variables";
+
+@import "bootstrap/scss/bootstrap"; // Required
+
+:root {
+  --dark-max: #140B43;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+/**** Sticky nav ****/
+.fixed-top.scrolled {
+  background: rgba(255, 255, 255, .8);
+  backdrop-filter: blur(10px);
+}
+
+nav {
+  .nav-link {
+    --#{$prefix}nav-link-color: var(--dark-max);
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  nav {
+    .nav-link {
+      --#{$prefix}navbar-nav-link-padding-x: .75rem;
+    }
+  }
+
+  .hero-section {
+    .hero-1 {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    
+    .hero-2 {
+      position: absolute;
+      top: 185px;
+      left: 18%;
+    }
+    
+    .head-1 {
+      position: absolute;
+        top: 190px;
+        right: -12%;
+    }
+    
+    .head-2 {
+      position: absolute;
+      left: 35%;
+      top: 100px;
+    }
+    
+    .client {
+      position: absolute;
+      right: -14%;
+      top: 285px;
+    }
+    
+    .chat {
+      position: absolute;
+        top: 350px;
+        left: -15%;
+    }
+  }
+}
