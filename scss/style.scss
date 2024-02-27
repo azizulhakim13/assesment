@@ -1,9 +1,19 @@
 @import "variables";
 
-@import "bootstrap/scss/bootstrap"; // Required
+@import "bootstrap/scss/bootstrap";
 
 :root {
   --dark-max: #140B43;
+  --blue: #f4fbfd;
+  --blue-2: #95D5EE;
+  --purple: #ece7f9;
+  --yellow: #faf7f0;
+  --yellow-2: #F9E58F;
+  --green: #ece7f9;
+  --orange: #F9A78F;
+  --orange-2: #ece7f9;
+  --gray-bg: #F5F5F7;
+  --border: #D1D1D1;
 }
 
 body {
@@ -23,6 +33,55 @@ nav {
   }
 }
 
+// Service section
+.services {
+  h2 {
+    max-width: 648px;
+    margin: 0 auto;
+  }
+
+  .bg-blue {
+    background-color: var(--blue);
+  }
+
+  .bg-yellow {
+    background-color: var(--yellow);
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+  }
+
+  .icon-1 {
+    background-color: var(--blue-2);
+  }
+
+  .icon-2 {
+    background-color: var(--orange);
+  }
+
+  .icon-3 {
+    background-color: var(--yellow-2);
+  }
+}
+
+// testimonial section
+.testimonial {
+  background-color: var(--yellow);
+
+  .icon {
+    height: 62px;
+    width: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .about-icon {
   display: flex;
   justify-content: center;
@@ -33,6 +92,141 @@ nav {
   width: 62px;
 }
 
+// counter
+.counter {
+  background-color: var(--blue-2);
+  margin-top: -100px;
+
+  .icon {
+    background-color: var(--yellow);
+  }
+}
+
+// Brand
+.brand{
+  .icon {
+    height: 62px;
+    width: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -30px;
+  }
+
+  .award{
+    border: 1px solid var(--border);
+  }
+}
+
+// Blog
+.blog{
+
+  h2 {
+    max-width: 630px;
+  }
+
+  .gallerySwiper {
+    position: relative;
+    padding-top: 80px; /* Adjust as needed */
+  }
+
+  /* Position the prev/next buttons */
+  .swiper-button-prev {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 11rem; /* Adjust top position */
+    left: 87%; /* Adjust right position */
+    z-index: 1000; /* Ensure buttons are above slides */
+    color: $primary; /* Button color */
+    background-color: var(--blue);
+    border-radius: 50%; /* Button border radius for circular shape */
+    cursor: pointer; /* Cursor style */
+    transition: transform ease 300ms; /* Transition effect */
+
+    &:after{
+      font-size: 1rem;
+    }
+  }
+  .swiper-button-next {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 11rem; /* Adjust top position */
+    right: 10px; /* Adjust right position */
+    z-index: 1000; /* Ensure buttons are above slides */
+    color: $primary; /* Button color */
+    background-color: var(--blue);
+    border-radius: 50%; /* Button border radius for circular shape */
+    cursor: pointer; /* Cursor style */
+    transition: transform ease 300ms; /* Transition effect */
+    &:after{
+      font-size: 1rem;
+    }
+  }
+
+  /* Style the buttons on hover */
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    color: $white;
+    background-color: $primary; /* Change background color on hover */
+  }
+}
+
+.blog-inner {
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-bottom: 3px solid var(--blue-2);
+  }
+}
+
+// Footer
+footer {
+  .top {
+    position: relative;
+    background-color: white; /* Set background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .top::before,
+  .top::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 1px;
+    background-color: var(--border); /* Set line color */
+  }
+  .top::before {
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .top::after {
+    right: 0;
+    transform: translateY(-50%);
+  }
+  .logo {
+    display: block;
+    z-index: 1; /* Set higher z-index to position image above lines */
+  }
+
+  .icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-bg);
+  }
+}
+
+.copyright .container {
+  border-top: 1px solid var(--border);
+}
+
+// Responsive
 @media only screen and (min-width: 1200px) {
   nav {
     .nav-link {
@@ -77,4 +271,36 @@ nav {
         left: -15%;
     }
   }
+
+  .testimonial {
+    .user {
+      position: relative;
+      &:after{
+        border-top: 1px solid var(--dark-max);
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 18%;
+        left: 0;
+        bottom: 0;
+        width: 45px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+.blog {
+  .swiper-button-next, .swiper-button-prev {
+    top: 13rem;
+  }
+
+  .swiper-button-next {
+    right: 85px;
+  }
+
+  .swiper-button-prev{
+    left: 81%;
+  }
+}
 }
