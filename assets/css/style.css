@@ -16827,6 +16827,16 @@ nav .nav-link {
   font-weight: 600;
 }
 
+.about-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+  border-radius: 50%;
+  height: 62px;
+  width: 62px;
+}
+
 @media only screen and (min-width: 1200px) {
   nav .nav-link {
     --bs-navbar-nav-link-padding-x: .75rem;

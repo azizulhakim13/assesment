@@ -1,165 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assesment</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="https://www.javascripttutorial.net/wp-content/uploads/2021/04/JavaScript-Tutorial.svg" type="image/x-icon">
-
-</head>
-<body>
-
-  <!-- Nav + Hero section starts -->
-  <section class="header-section bg-light position-relative z-n1">
-    <img class="position-absolute z-1 img-fluid" src="assets/img/shapes/left-top.svg" alt="shape">
-    <img class="position-absolute top-0 end-0 z-1 img-fluid" src="assets/img/shapes/right-top.svg" alt="shape">
-    <div id="navbar_top" class="nav-bar fixed-top py-3 ">
-      <nav class="d-flex align-items-center container navbar navbar-expand-xl ps-lg-0 ps-3 z-2">
-          <div><a href="#"><img src="assets/img/logo-dark.png" alt="logo"></a></div>
-          <div class="offcanvas offcanvas-start offcanvas-xl py-xl-2" data-bs-scroll="false" data-bs-backdrop="static" tabindex="-1" id="offcanvasScrolling">
-              <div class="offcanvas-header d-flex d-xl-none ps-3 py-3">
-                  <a href="#"><img src="assets/img/logo-dark.png" alt="logo"></a>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body p-0 align-items-center">
-                  <ul class="navbar-nav mx-xl-auto ps-3 ps-xl-0 my-3 my-xl-0 position-relative">
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Home
-                      </a>
-                      <ul class="dropdown-menu border">
-                        <li><a class="dropdown-item py-2" href="#">link 1</a></li>
-                        <li><a class="dropdown-item py-2" href="#">Link 2</a></li>
-                        <li><a class="dropdown-item py-2" href="#">Link 3</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        About Us
-                      </a>
-                      <ul class="dropdown-menu border">
-                        <li><a class="dropdown-item py-2" href="#">link 1</a></li>
-                        <li><a class="dropdown-item py-2" href="#">Link 2</a></li>
-                        <li><a class="dropdown-item py-2" href="#">Link 3</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Services
-                      </a>
-                      <ul class="dropdown-menu border">
-                        <li><a class="dropdown-item py-2" href="#">link 1</a></li>
-                        <li><a class="dropdown-item py-2" href="#">Link 2</a></li>
-                        <li><a class="dropdown-item py-2" href="#">Link 3</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Projects
-                      </a>
-                      <ul class="dropdown-menu border">
-                        <li><a class="dropdown-item py-2" href="#">link 1</a></li>
-                        <li><a class="dropdown-item py-2" href="#">Link 2</a></li>
-                        <li><a class="dropdown-item py-2" href="#">Link 3</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Blog
-                      </a>
-                      <ul class="dropdown-menu border">
-                        <li><a class="dropdown-item py-2" href="#">link 1</a></li>
-                        <li><a class="dropdown-item py-2" href="#">Link 2</a></li>
-                        <li><a class="dropdown-item py-2" href="#">Link 3</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Page
-                      </a>
-                      <ul class="dropdown-menu border">
-                        <li><a class="dropdown-item py-2" href="#">link 1</a></li>
-                        <li><a class="dropdown-item py-2" href="#">Link 2</a></li>
-                        <li><a class="dropdown-item py-2" href="#">Link 3</a></li>
-                      </ul>
-                    </li>
-                      <li class="nav-item position-static">
-                          <a class="nav-link fw-medium" href="#">Contact</a>
-                      </li>
-                  </ul>
-              </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="icon"
+      href="https://www.javascripttutorial.net/wp-content/uploads/2021/04/JavaScript-Tutorial.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Nav + Hero section starts -->
+    <section class="header-section bg-light position-relative z-n1">
+      <img
+        class="position-absolute z-1 img-fluid"
+        src="assets/img/shapes/left-top.svg"
+        alt="shape"
+      />
+      <img
+        class="position-absolute top-0 end-0 z-1 img-fluid"
+        src="assets/img/shapes/right-top.svg"
+        alt="shape"
+      />
+      <div id="navbar_top" class="nav-bar fixed-top py-3">
+        <nav
+          class="d-flex align-items-center container navbar navbar-expand-xl ps-lg-0 ps-3 z-2"
+        >
+          <div>
+            <a href="#"><img src="assets/img/logo-dark.png" alt="logo" /></a>
           </div>
-          <div class="d-xl-flex d-none align-items-center">
-              <div class="bg-dark p-3 rounded-circle me-12">
-                <img src="assets/img/icons/phone.svg" alt="phone">
-              </div>
-              <div>
-                <h6>Need help?</h6>
-                <h5 class="fw-bold mb-0">(808) 555-0111</h5>
-              </div>
-          </div>
-          <nav class="mobile-header navbar custom-toggler navbar-expand-xl d-flex d-xl-none align-items-center" data-bs-theme="light">
-              <div class="container">
-                  <a class="border-0 me-0" href="#" data-bs-toggle="offcanvas"
-                     data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" aria-label="Toggle navigation">
-                      <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                          <path d="M0 0h24v24H0z" fill="none"/>
-                          <path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0-.55.45-1 1-1h16c.55 0 1 .45 1 1s-.45 1-1 1H4c-.55 0-1-.45-1-1z"/>
-                        </svg>
-                        
-                      </span>
+          <div
+            class="offcanvas offcanvas-start offcanvas-xl py-xl-2"
+            data-bs-scroll="false"
+            data-bs-backdrop="static"
+            tabindex="-1"
+            id="offcanvasScrolling"
+          >
+            <div class="offcanvas-header d-flex d-xl-none ps-3 py-3">
+              <a href="#"><img src="assets/img/logo-dark.png" alt="logo" /></a>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body p-0 align-items-center">
+              <ul
+                class="navbar-nav mx-xl-auto ps-3 ps-xl-0 my-3 my-xl-0 position-relative"
+              >
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Home
                   </a>
-              </div>
-          </nav>
-      </nav>
-    </div>
-
-    <div class="hero-section pt-144 pb-lg-180 pb-5 z-2">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6">
-            <h1 class="display-1 fw-bold pt-lg-80">Bring your business into creativity</h1>
-            <p class="my-lg-4">Incorporating a business offers benefits tax limited liability protection tax the</p>
-            <div>
-              <a href="#" class="btn btn-primary">Get Started</a>
+                  <ul class="dropdown-menu border">
+                    <li><a class="dropdown-item py-2" href="#">link 1</a></li>
+                    <li><a class="dropdown-item py-2" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item py-2" href="#">Link 3</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    About Us
+                  </a>
+                  <ul class="dropdown-menu border">
+                    <li><a class="dropdown-item py-2" href="#">link 1</a></li>
+                    <li><a class="dropdown-item py-2" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item py-2" href="#">Link 3</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu border">
+                    <li><a class="dropdown-item py-2" href="#">link 1</a></li>
+                    <li><a class="dropdown-item py-2" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item py-2" href="#">Link 3</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Projects
+                  </a>
+                  <ul class="dropdown-menu border">
+                    <li><a class="dropdown-item py-2" href="#">link 1</a></li>
+                    <li><a class="dropdown-item py-2" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item py-2" href="#">Link 3</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Blog
+                  </a>
+                  <ul class="dropdown-menu border">
+                    <li><a class="dropdown-item py-2" href="#">link 1</a></li>
+                    <li><a class="dropdown-item py-2" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item py-2" href="#">Link 3</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Page
+                  </a>
+                  <ul class="dropdown-menu border">
+                    <li><a class="dropdown-item py-2" href="#">link 1</a></li>
+                    <li><a class="dropdown-item py-2" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item py-2" href="#">Link 3</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item position-static">
+                  <a class="nav-link fw-medium" href="#">Contact</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="right position-relative">
+          <div class="d-xl-flex d-none align-items-center">
+            <div class="bg-dark p-3 rounded-circle me-12">
+              <img src="assets/img/icons/phone.svg" alt="phone" />
+            </div>
+            <div>
+              <h6>Need help?</h6>
+              <h5 class="fw-bold mb-0">(808) 555-0111</h5>
+            </div>
+          </div>
+          <nav
+            class="mobile-header navbar custom-toggler navbar-expand-xl d-flex d-xl-none align-items-center"
+            data-bs-theme="light"
+          >
+            <div class="container">
+              <a
+                class="border-0 me-0"
+                href="#"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling"
+                aria-controls="offcanvasScrolling"
+                aria-label="Toggle navigation"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0-.55.45-1 1-1h16c.55 0 1 .45 1 1s-.45 1-1 1H4c-.55 0-1-.45-1-1z"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </nav>
+        </nav>
+      </div>
+
+      <div class="hero-section pt-144 pb-lg-180 pb-5 z-2">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-6">
+              <h1 class="display-1 fw-bold pt-lg-80">
+                Bring your business into creativity
+              </h1>
+              <p class="my-lg-4">
+                Incorporating a business offers benefits tax limited liability
+                protection tax the
+              </p>
               <div>
-                <img class="img-fluid hero-1 d-lg-flex d-none" src="assets/img/hero-1.png" alt="hero">
+                <a href="#" class="btn btn-primary">Get Started</a>
               </div>
-              <div>
-                <img class="img-fluid hero-2" src="assets/img/hero-2.png" alt="hero">
-              </div>
-              <div>
-                <img class="img-fluid head-1 d-lg-flex d-none" src="assets/img/head-1.svg" alt="shape">
-              </div>
-              <div>
-                <img class="img-fluid head-2 d-lg-flex d-none" src="assets/img/head-2.svg" alt="shape">
-              </div>
-              <div>
-                <img class="img-fluid client d-lg-flex d-none" src="assets/img/clients.png" alt="shape">
-              </div>
-              <div>
-                <img class="img-fluid chat d-lg-flex d-none" src="assets/img/chat.png" alt="shape">
+            </div>
+            <div class="col-lg-6">
+              <div class="right position-relative">
+                <div>
+                  <img
+                    class="img-fluid hero-1 d-lg-flex d-none"
+                    src="assets/img/hero-1.png"
+                    alt="hero"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="img-fluid hero-2"
+                    src="assets/img/hero-2.png"
+                    alt="hero"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="img-fluid head-1 d-lg-flex d-none"
+                    src="assets/img/head-1.svg"
+                    alt="shape"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="img-fluid head-2 d-lg-flex d-none"
+                    src="assets/img/head-2.svg"
+                    alt="shape"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="img-fluid client d-lg-flex d-none"
+                    src="assets/img/clients.png"
+                    alt="shape"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="img-fluid chat d-lg-flex d-none"
+                    src="assets/img/chat.png"
+                    alt="shape"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Nav + Hero section ends -->
+    </section>
+    <!-- Nav + Hero section ends -->
+
+    <!-- About section starts -->
+    <section class="py-lg-100 py-5">
+      <div class="container">
+        <div class="row gx-md-5 gy-5">
+          <div class="col-md-6">
+            <img class="img-fluid" src="assets/img/about.png" alt="about-us" />
+          </div>
+          <div class="col-md-6">
+            <h2 class="display-5 fw-bold mb-3">
+              We develop product that the people love to use
+            </h2>
+            <p class="mb-5">
+              Creative agency encompasses a wide an services related to creative
+              and strategic marketing These age specialize in offering
+              innovative solutions to clients branding and communication needs
+              loren ipsum
+            </p>
+            <div class="d-flex mb-40">
+              <div class="about-icon bg-primary me-3">
+                <img src="assets/img/icons/content.svg" alt="content" />
+              </div>
+              <div>
+                <h3 class="fw-bold">Content Wizards</h3>
+                <p class="mb-0">
+                  Creative agency encompasses a wide range of services related
+                  to creative and strategic marketing
+                </p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="about-icon bg-primary me-3">
+                <img src="assets/img/icons/idea.svg" alt="content" />
+              </div>
+              <div>
+                <h3 class="fw-bold">Idea Makers</h3>
+                <p class="mb-0">
+                  Creative agency encompasses a wide range of services related
+                  to creative and strategic marketing
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About section ends -->
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
-</body>
-</html> 
+  </body>
+</html>
